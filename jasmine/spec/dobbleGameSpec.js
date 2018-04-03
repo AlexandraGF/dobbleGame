@@ -51,6 +51,12 @@ describe('DobbleGame', function (){
       expect(game.cards.length).toEqual(4);
     });
 
+    it('Current game card should be a random card', function() {
+      game = new DobbleGame();
+      game.randomCard();
+      expect(game.currentCard.length).toEqual(17);
+    });
+
   });
 
 });
