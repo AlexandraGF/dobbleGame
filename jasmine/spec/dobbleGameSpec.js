@@ -42,6 +42,15 @@ describe('DobbleGame', function (){
       game.findMatch(card, player);
       expect(game.totalCardsNo).toEqual(4);
     });
+
+    it('Each card played and won will be taben out from cards array', function() {
+      game = new DobbleGame();
+      card = 'picture3';
+      player = 1;
+      game.findMatch(card, player);
+      expect(game.cards.length).toEqual(4);
+    });
+
   });
 
 });
