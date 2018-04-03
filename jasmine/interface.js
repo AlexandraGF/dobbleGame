@@ -1,10 +1,23 @@
 $(document).ready(function() {
   var game = new DobbleGame();
 
-  $('#gamecard').one('click', function() {
+  $('#gamecard').on('click', function() {
+    if (game.totalCardsNo == 5) {
     game.randomCard();
     $('#gamecard').attr('src', game.currentCard);
+    }
+  });
+
+  $('#player1card').on('click', function() {
+    game.findMatch(game.currentCard, 1);
+    $('#player1card').attr('src', game.currentCard);
     console.log(game.currentCard);
-    // console.log(game.num);
+    game.randomCard();
+    $('#gamecard').attr('src', game.currentCard);
+    if (game.totalCardsNo == 0) {
+      $('#gamecard').attr('src', 'public/playagain.jpg');
+    }
+    console.log(game.currentCard);
+    console.log(game.totalCardsNo);
   });
 });

@@ -25,5 +25,4 @@ DobbleGame.prototype.findMatch = function (card, player) {
 
 DobbleGame.prototype.randomCard = function () {
   this.currentCard = this.cards[Math.floor((Math.random()* this.cards.length))];
-
 };
