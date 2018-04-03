@@ -10,17 +10,20 @@ var DobbleGame = function () {
 
 DobbleGame.prototype.findMatch = function (card, player) {
 
-  if (player == 1) {
-  this.player1Card = card;
-  this.player1CardNo += 1;
-  }
-  else {
-    this.player2Card = card;
-    this.player2CardNo += 1;
-  };
+  if (this.totalCardsNo > 0) {
 
-  this.totalCardsNo -= 1;
-  this.cards.splice( this.cards.indexOf(card), 1 );
+    if (player == 1) {
+    this.player1Card = card;
+    this.player1CardNo += 1;
+    }
+    else {
+      this.player2Card = card;
+      this.player2CardNo += 1;
+    };
+
+    this.totalCardsNo -= 1;
+    this.cards.splice( this.cards.indexOf(card), 1 );
+  }
 };
 
 DobbleGame.prototype.randomCard = function () {

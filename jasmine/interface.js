@@ -22,6 +22,7 @@ $(document).ready(function() {
     if (game.totalCardsNo == 0) {
       $('#gamecard').attr('src', 'public/playagain.jpg');
     }
+    $('#player1cardswon').text(game.player1CardNo);
     console.log(game.currentCard);
     console.log(game.totalCardsNo);
   });

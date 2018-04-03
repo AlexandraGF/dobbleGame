@@ -32,6 +32,19 @@ describe('DobbleGame', function (){
       game.findMatch(card, player);
       expect(game.player2Card).toEqual('picture1');
     });
+
+    it('not have won cards number more than total cards number', function() {
+      game = new DobbleGame();
+      card = 'picture1';
+      player = 1;
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      expect(game.player1CardNo).toEqual(5);
+    });
   });
 
   describe('The cards: ', function(){
