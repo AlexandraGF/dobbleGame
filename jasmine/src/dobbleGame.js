@@ -3,6 +3,7 @@ var DobbleGame = function () {
   this.player2Card = '';
   this.player1CardNo = 0;
   this.player2CardNo = 0;
+  this.totalCardsNo = 5;
 };
 
 DobbleGame.prototype.findMatch = function (card, player) {
@@ -15,4 +16,6 @@ DobbleGame.prototype.findMatch = function (card, player) {
     this.player2Card = card;
     this.player2CardNo += 1;
   }
+
+  this.totalCardsNo -= 1; 
 };

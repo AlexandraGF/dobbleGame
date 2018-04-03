@@ -32,6 +32,16 @@ describe('DobbleGame', function (){
       game.findMatch(card, player);
       expect(game.player2Card).toEqual('picture1');
     });
-
   });
+
+  describe('The cards: ', function(){
+    it('Total number of deck is smaller when a symbol is matched', function() {
+      game = new DobbleGame();
+      card = 'picture1';
+      player = 1;
+      game.findMatch(card, player);
+      expect(game.totalCardsNo).toEqual(4);
+    });
+  });
+
 });
