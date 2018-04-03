@@ -8,5 +8,14 @@ describe('DobbleGame', function (){
       game.findMatch(card, player);
       expect(game.player1Card).toEqual('picture1');
     });
+
+    it('see the winning cards counter', function() {
+      game = new DobbleGame();
+      card = 'picture1';
+      player = 1;
+      game.findMatch(card, player);
+      expect(game.player1CardNo).toEqual(1);
+    });
+
   });
 });
