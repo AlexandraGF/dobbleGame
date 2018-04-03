@@ -17,5 +17,13 @@ describe('DobbleGame', function (){
       expect(game.player1CardNo).toEqual(1);
     });
 
+    it('see the other player\'s winning cards counter', function() {
+      game = new DobbleGame();
+      card = 'picture1';
+      player = 2;
+      game.findMatch(card, player);
+      expect(game.player2CardNo).toEqual(1);
+    });
+
   });
 });
