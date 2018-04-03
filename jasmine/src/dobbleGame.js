@@ -20,5 +20,4 @@ DobbleGame.prototype.findMatch = function (card, player) {
 
   this.totalCardsNo -= 1;
   this.cards.splice( this.cards.indexOf(card), 1 );
-
 };
