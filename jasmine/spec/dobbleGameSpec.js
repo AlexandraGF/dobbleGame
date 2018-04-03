@@ -56,7 +56,21 @@ describe('DobbleGame', function (){
       game.randomCard();
       expect(game.currentCard.length).toEqual(17);
     });
+  });
 
+  describe('Game ', function(){
+    it('can be reset when finished to be played again', function() {
+      game = new DobbleGame();
+      card = 'picture1';
+      player = 1;
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.resetGame();
+      expect(game.cards.length).toEqual(5);
+    });
   });
 
 });
