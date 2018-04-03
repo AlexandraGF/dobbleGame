@@ -23,6 +23,7 @@ $(document).ready(function() {
       $('#gamecard').attr('src', 'public/playagain.jpg');
     }
     $('#player1cardswon').text(game.player1CardNo);
+    $('#totalcards').text(game.totalCardsNo);
     console.log(game.currentCard);
     console.log(game.totalCardsNo);
   });
@@ -36,6 +37,8 @@ $(document).ready(function() {
     if (game.totalCardsNo == 0) {
       $('#gamecard').attr('src', 'public/playagain.jpg');
     }
+    $('#player2cardswon').text(game.player2CardNo);
+    $('#totalcards').text(game.totalCardsNo);
     console.log(game.currentCard);
     console.log(game.totalCardsNo);
   });
