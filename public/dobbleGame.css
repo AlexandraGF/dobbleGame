@@ -20,3 +20,7 @@ html {
  #player1cardswon, #player2cardswon, #totalcards {
    font-size: 30px;
  }
+
+ #deckcards, #player1, #player2 {
+    font-size: 45px;
+ }
