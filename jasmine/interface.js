@@ -2,12 +2,12 @@ $(document).ready(function() {
   var game = new DobbleGame();
 
   $('#gamecard').on('click', function() {
-    if (game.totalCardsNo == 5) {
+    if (game.totalCardsNo == 26) {
     game.randomCard();
     $('#gamecard').attr('src', game.currentCard);
     }
     if (game.totalCardsNo < 1) {
-      $('#gamecard').attr('src', 'public/dobblegame.jpg');
+      $('#gamecard').attr('src', 'public/photos/dobblegame.jpg');
       game.resetGame();
       $('#player1cardswon').text(game.player1CardNo);
       $('#player2cardswon').text(game.player2CardNo);
@@ -21,7 +21,7 @@ $(document).ready(function() {
     game.randomCard();
     $('#gamecard').attr('src', game.currentCard);
     if (game.totalCardsNo == 0) {
-      $('#gamecard').attr('src', 'public/playagain.jpg');
+      $('#gamecard').attr('src', 'public/photos/playagain.jpg');
     }
     $('#player1cardswon').text(game.player1CardNo);
     $('#totalcards').text(game.totalCardsNo);
@@ -33,11 +33,9 @@ $(document).ready(function() {
     game.randomCard();
     $('#gamecard').attr('src', game.currentCard);
     if (game.totalCardsNo == 0) {
-      $('#gamecard').attr('src', 'public/playagain.jpg');
+      $('#gamecard').attr('src', 'public/photos/playagain.jpg');
     }
     $('#player2cardswon').text(game.player2CardNo);
     $('#totalcards').text(game.totalCardsNo);
   });
-
-
 });

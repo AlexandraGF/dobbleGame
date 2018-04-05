@@ -33,7 +33,7 @@ describe('DobbleGame', function (){
       expect(game.player2Card).toEqual('picture1');
     });
 
-    it('not have won cards number more than total cards number', function() {
+    it('not have won more cards than total cards number', function() {
       game = new DobbleGame();
       card = 'picture1';
       player = 1;
@@ -43,7 +43,28 @@ describe('DobbleGame', function (){
       game.findMatch(card, player);
       game.findMatch(card, player);
       game.findMatch(card, player);
-      expect(game.player1CardNo).toEqual(5);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      game.findMatch(card, player);
+      expect(game.player1CardNo).toEqual(26);
     });
   });
 
@@ -53,7 +74,7 @@ describe('DobbleGame', function (){
       card = 'picture1';
       player = 1;
       game.findMatch(card, player);
-      expect(game.totalCardsNo).toEqual(4);
+      expect(game.totalCardsNo).toEqual(25);
     });
 
     it('Each card played and won will be taben out from cards array', function() {
@@ -61,13 +82,13 @@ describe('DobbleGame', function (){
       card = 'picture3';
       player = 1;
       game.findMatch(card, player);
-      expect(game.cards.length).toEqual(4);
+      expect(game.cards.length).toEqual(25);
     });
 
     it('Current game card should be a random card', function() {
       game = new DobbleGame();
       game.randomCard();
-      expect(game.currentCard.length).toEqual(17);
+      expect(game.currentCard.length).toEqual(25);
     });
   });
 
@@ -82,7 +103,7 @@ describe('DobbleGame', function (){
       game.findMatch(card, player);
       game.findMatch(card, player);
       game.resetGame();
-      expect(game.cards.length).toEqual(5);
+      expect(game.cards.length).toEqual(26);
     });
   });
 
