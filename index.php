@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Dobble Game</title>
-    <link rel="stylesheet" type="text/css" href="./docs/public/dobbleGame.css"></link>
+    <link rel="stylesheet" type="text/css" href="docs/public/dobbleGame.css"></link>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed" rel="stylesheet">
-    <script type="text/javascript" src="./docs/jasmine/interface.js"></script>
-    <script type="text/javascript" src="./docs/jasmine/src/dobbleGame.js"></script>
+    <script type="text/javascript" src="docs/jasmine/interface.js"></script>
+    <script type="text/javascript" src="docs/jasmine/src/dobbleGame.js"></script>
   </head>
   <body>
     <h1>Let's play the Dobble Game!</h1>
