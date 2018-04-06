@@ -24,6 +24,6 @@ with the most cards' number at the end wins the game!
 
 ## Screenshots from the Game
 
-[alt tag](docs/public/readmePhotos/play_game1.png)
-[alt tag](docs/public/readmePhotos/play_game2.png)
-[alt tag](docs/public/readmePhotos/play_game3.png)
+![alt tag](docs/public/readmePhotos/play_game1.png)
+![alt tag](docs/public/readmePhotos/play_game2.png)
+![alt tag](docs/public/readmePhotos/play_game3.png)
