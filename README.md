@@ -21,6 +21,12 @@ at the end wins the game!
 1. Open your browser and type ``` https://alexandragf.github.io/dobbleGame/ ```
 2. Enjoy!
 
+## How to run the tests (Jasmine testing)
+
+1. On your command line type ``` git clone git@github.com:AlexandraGF/dobbleGame.git ```
+2. Then change the directory by typing ``` cd dobbleGame/docs/jasmine ```
+3. Type ``` open SpecRunner.html ``` and your browser will open the passing tests.
+
 ## Screenshots from the Game
 
 ![alt tag](docs/public/readmePhotos/play_game1.png)
