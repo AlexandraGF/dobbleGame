@@ -3,7 +3,11 @@
 ## How to play:
 
 ```
-To start the Game, please click on the Deck Cards in the middle. The player that is quicker to match and say out loud the symbol from his card with the exact symbol from the Game Deck Cards, needs to click on his card picture to get the card! The player with the most cards' number at the end wins the game!
+To start the Game, please click on the Deck Cards in the middle.
+The player that is quicker to match and say out loud the symbol
+from his card with the exact symbol from the Game Deck Cards,
+needs to click on his card picture to get the card! The player
+with the most cards' number at the end wins the game!
 ```
 
 ## How to play using command line (the deck cards change is quicker)
@@ -20,6 +24,6 @@ To start the Game, please click on the Deck Cards in the middle. The player that
 
 ## Screenshots from the Game
 
-[photo1](docs/public/readmePhotos/play_game1.png)
-[photo2](docs/public/readmePhotos/play_game2.png)
-[photo3](docs/public/readmePhotos/play_game3.png)
+[alt tag](docs/public/readmePhotos/play_game1.png)
+[alt tag](docs/public/readmePhotos/play_game2.png)
+[alt tag](docs/public/readmePhotos/play_game3.png)
