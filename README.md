@@ -1,4 +1,4 @@
-## Dobble Game
+## Dobble Game (JavaScript)
 
 ## How to play:
 
