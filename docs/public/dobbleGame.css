@@ -1,3 +1,8 @@
+table, th, td {
+   text-align: center;
+   align-items: center;
+}
+
 h1, h2, section {
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-size: 18px;
@@ -6,12 +11,10 @@ h1, h2, section {
 
 h2 {
   text-align: center;
-  margin-left: 15%;
-  margin-right: 15%;
 }
 
 .table1 {
-  margin-left: 42%;
+  border-style: hidden;
 }
 
 h1 {
@@ -25,8 +28,7 @@ html, button {
 
 button {
   border-style: hidden;
-  border-color: black;
-  margin-left: 2%;
+  outline: none;
 }
 
 #gamecard, #player1card, #player2card {
