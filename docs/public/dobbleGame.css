@@ -21,6 +21,10 @@ h1 {
   font-size: 30px;
 }
 
+.img-circle {
+  border-radius: 30%;
+}
+
 
 html, button {
   background-color: #a5b6d1;
