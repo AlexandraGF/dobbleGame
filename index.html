@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dobble Game</title>
+    <link rel="stylesheet" type="text/css" href="public/dobbleGame.css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed" rel="stylesheet">
+    <script type="text/javascript" src="jasmine/interface.js"></script>
+    <script type="text/javascript" src="jasmine/src/dobbleGame.js"></script>
+  </head>
+  <body>
+    <h1>Let's play the Dobble Game!</h1>
+
+      <h2>To start the Game, please click on the Deck Cards in the middle. The player that is quicker to match and say out loud the symbol from his card with the exact symbol from the Game Deck Cards, needs to click on his card picture to get the card! The player with the most cards' number at the end wins the game!</h2>
+      <h1 id="good"> Good Luck!</h1>
+
+      <table class="table1">
+      <tr>
+        <th><button><img class="img-circle" id="player1card" src="public/photos/photoPlayer1.JPG" type="image" name="button1" width="400" height="400" value="player1card"></button></th>
+        <th><button><img class="img-circle" id="gamecard" src="public/photos/dobblegame.jpg" type="image" name="button2" width="400" height="400" value="player1card"></button></th>
+        <th><img class="img-circle" id="player2card" src="public/photos/photoPlayer2.JPG" type="image" name="button3" width="400" height="400" value="player2card"></th>
+      </tr>
+      <tr>
+        <td>Player 1:</td>
+        <td>Cards Left to Play:</td>
+        <td>Player 2:</td>
+      </tr>
+      <tr>
+        <td id="player1cardswon">0</td>
+        <td id="totalcards">26</td>
+        <td id="player2cardswon">0</td>
+      </tr>
+    </table>
+
+    <h2> Developed by <a href="https://github.com/AlexandraGF">Alexandra Fina</a></h2>
+
+  </body>
+</html>

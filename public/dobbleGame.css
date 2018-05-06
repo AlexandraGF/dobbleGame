@@ -1,0 +1,53 @@
+table, th, td {
+   text-align: center;
+   align-items: center;
+}
+
+h1, h2, section {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.table1 {
+  border-style: hidden;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.img-circle {
+  border-radius: 30%;
+}
+
+
+html, button {
+  background-color: #a5b6d1;
+}
+
+button {
+  border-style: hidden;
+  outline: none;
+}
+
+#gamecard, #player1card, #player2card {
+  background-color: purple;
+}
+
+ #player1cardswon, #player2cardswon, #totalcards {
+   font-size: 30px;
+ }
+
+ #deckcards, #player1, #player2 {
+    font-size: 45px;
+ }
+
+ #good {
+   color: green;
+   font-size: 40px;
+ }
