@@ -18,7 +18,7 @@ at the end wins the game!
 
 ## How to play directly on the internet (the deck cards change is slower)
 
-1. Open your browser and type ``` https://alexandragf.github.io/dobbleGame/ ```
+1. Click on the link [DobbleGame](https://alexandragf.github.io/dobbleGame/)
 2. Enjoy!
 
 ## How to run the tests (Jasmine testing)
